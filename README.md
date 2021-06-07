@@ -21,7 +21,7 @@ Nanoleaf shapes are light panels that connects with your local network. This is 
 ## Nanoleaf Open API
 The link the Nanoleaf API is: https://forum.nanoleaf.me/docs#_y93gn2m7n534
 
-The API is a REST API which means the protocol HTTP is used.
+The API is a REST API and is uses the HTTP protocol to communicate.
 
 ## Setup 
 This is how the setup looks like:
