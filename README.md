@@ -15,6 +15,7 @@ Nanoleaf shapes are light panels that connects with your local network. This is 
 * Python 3.7
 * Python 3 Development toolkit (install python3-dev python3-setuptools)
 * RPi.GPIO (install python3-rpi.gpio)
+* Spidev tools (install  python3-spidev)
 * Enable spi in /boot/config.txt (https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md)
 
 ## Nanoleaf Open API
@@ -41,7 +42,6 @@ With an MCP3008 it is possible to convert a DC voltage (between 0 and -3.3V) to 
 A potentiometer is a resistor that acts as an adjustable voltage divider. Because the voltage will be adjustable, we can easily use it as a brightness changer. If the voltage gets higher, the light gets brighter.
 
 ## Result
-
 Here you can find the video of the result:
 
 ## Code
