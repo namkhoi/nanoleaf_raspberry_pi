@@ -68,8 +68,8 @@ try:
                 hue = hue + 60
             else:
                 hue = hue - 360 + 60
-            #Saturatie is set to 50%
-            # color temperature is set to 3500
+            #Saturatie is set to 100%
+            # color temperature is set to 1200
             payload = '{"sat": {"value": 100}, "ct": {"value":1200}, "hue":{"value":%s}}' % (hue)
             headers = {
                 'Content-Type': 'text/plain'
