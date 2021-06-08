@@ -33,7 +33,7 @@ I will discuss each piece of the important hardware seperatly to make it more cl
 The push buttons will be used for the following:
 * Turning the lights on and off
 * Go to the next color
-* GO back to the previous color
+* Go back to the previous color
 
 Resistors are needed here because otherwise the Raspberry Pi will short circuit.
 
