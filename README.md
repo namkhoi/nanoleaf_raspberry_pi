@@ -43,7 +43,7 @@ A potentiometer is a resistor that acts as an adjustable voltage divider. Becaus
 
 ## Result
 Here you can find the video of the result:
-
+https://youtu.be/L2gSwSTDRfI
 ## Code
 The code that is used can be found in this repository.
 
