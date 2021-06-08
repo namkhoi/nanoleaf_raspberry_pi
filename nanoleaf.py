@@ -6,7 +6,7 @@ import spidev
 import time
 
 spi = spidev.SpiDev()  # create spi object
-spi.open(0, 0)  # open spi port 0, device CS0 pin 24
+spi.open(0, 0)  
 spi.max_speed_hz = 1000000
 auth_token = "xxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
