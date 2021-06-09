@@ -27,6 +27,7 @@ GPIO.setup(4, GPIO.IN)
 url = "http://192.168.0.219:16021/api/v1/{}/state".format(auth_token)
 try:
     while True:
+        # Enable/disable lights 
         if GPIO.input(17) == 1:
             print("Turn on/off")
 
@@ -51,7 +52,7 @@ try:
                 response = requests.request("PUT", url, headers=headers, data=payload)
                 on = True
             time.sleep(0.1)
-
+        # Change to the next color
         if GPIO.input(18) == 1:
             print("Change color")
 
@@ -75,6 +76,7 @@ try:
                 'Content-Type': 'text/plain'
             }
             response = requests.request("PUT", url, headers=headers, data=payload)
+        # Go back to previous color
         if GPIO.input(4) == 1:
             print("Reverse change color")
 
@@ -91,13 +93,14 @@ try:
                 hue = hue - 60
             else:
                 hue = hue + 360 - 60
-            #Saturatie is set to 50%
-            # color temperature is set to 3500
+            # Saturatie is set to 100%
+            # Color temperature is set to 1200
             payload = '{"sat": {"value": 100}, "ct": {"value":1200}, "hue":{"value":%s}}' % (hue)
             headers = {
                 'Content-Type': 'text/plain'
             }
             response = requests.request("PUT", url, headers=headers, data=payload)
+        # Change the brightness of the lights
         if on:
             brightness = readadc(0)
             print(brightness)
