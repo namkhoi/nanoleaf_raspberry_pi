@@ -31,7 +31,7 @@ try:
         if GPIO.input(17) == 1:
             print("Turn on/off")
 
-            url_get_on = "http://192.168.0.219:16021/api/v1/{}/state/on"
+            url_get_on = url + "/on"
             payload = ""
             headers = {}
             response = requests.request("GET", url_get_on, headers=headers, data=payload)
@@ -55,9 +55,6 @@ try:
         # Change to the next color
         if GPIO.input(18) == 1:
             print("Change color")
-
-            url = "http://192.168.0.219:16021/api/v1/{}/state/"
-
             payload = ""
             headers = {}
 
@@ -79,8 +76,6 @@ try:
         # Go back to previous color
         if GPIO.input(4) == 1:
             print("Reverse change color")
-
-            url = "http://192.168.0.219:16021/api/v1/{}/state/"
 
             payload = ""
             headers = {}
