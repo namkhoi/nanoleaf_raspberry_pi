@@ -26,7 +26,8 @@ The API is a REST API and is uses the HTTP protocol to communicate.
 ## Setup 
 This is how the setup looks like:
 <br>
-![setup image](https://github.com/namkhoi/nanoleaf_raspberry_pi/blob/main/setup1.jpg?raw=true)
+<img src="https://github.com/namkhoi/nanoleaf_raspberry_pi/blob/main/setup1.jpg?raw=true" alt="" width="50%">
+
 I will discuss each piece of the important hardware seperatly to make it more clear.
 
 ### Push buttons
